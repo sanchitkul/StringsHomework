@@ -10,6 +10,8 @@ $obj-> strlen($text_1);
 $obj-> str_repeat($text_1);
 $obj-> strtolower($text_1);
 $obj-> strrev($text_1);
+$obj-> strtoupper($text_1);
+$obj-> strpbrk($text_1);
 class main{
 
 public function __construct()
@@ -64,7 +66,20 @@ echo" Reverse the sentence : $text_1";
 echo'<br>output--->'.$output6;
 echo'<hr>';
 }
-
+public function strtoupper($text_1)
+{
+$output7 = strtoupper($text_1);
+echo"Upper case all characters in sentence : $text_1";
+echo'<br>output--->'.$output7;
+echo'<hr>';
+}
+public function strpbrk($text_1)
+{
+$output8 = strpbrk($text_1,'W');
+echo" Search W in sentence: $text_1";
+echo'<br>output--->'.$output8;
+echo'<hr>';
+}
 
 
 

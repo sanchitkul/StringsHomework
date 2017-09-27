@@ -8,6 +8,7 @@ $obj-> str_word_count($text_1);
 $obj-> str_shuffle($text_1);
 $obj-> strlen($text_1);
 $obj-> str_repeat($text_1);
+$obj-> strtolower($text_1);
 class main{
 
 public function __construct()
@@ -48,7 +49,13 @@ echo"Repeat the sentence Once:$text_1";
 echo'<br>output--->'.$output4;
 echo'<hr>';
 }
-
+public function strtolower($text_1)
+{
+$output5 = strtolower($text_1);
+echo"Lower case all characters in sentence : $text_1";
+echo'<br>output--->'.$output5;
+echo'<hr>';
+}
 
 
 

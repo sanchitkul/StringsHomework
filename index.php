@@ -3,6 +3,8 @@
 $obj = new main();
 $text="Proff Keith Williams";
 $obj-> printthis($text);
+$text_1="Thursday Class is Web Systems Development";
+$obj-> str_word_count($text_1);
 class main{
 
 public function __construct()
@@ -15,11 +17,12 @@ echo '<h2>Web Systems Development</h2>';
 print($text);
 echo'<hr>';
 }
-
-
-
-
-
-
+public function str_word_count($text_1)
+{
+$output = str_word_count($text_1);
+echo"How many words in the sentence:$text_1";
+echo'output--->'.$output;
+echo'<hr>';
+}
 }
 ?>

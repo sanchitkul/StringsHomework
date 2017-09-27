@@ -12,6 +12,7 @@ $obj-> strtolower($text_1);
 $obj-> strrev($text_1);
 $obj-> strtoupper($text_1);
 $obj-> strpbrk($text_1);
+$obj-> strpos($text_1);
 class main{
 
 public function __construct()
@@ -80,8 +81,12 @@ echo" Search W in sentence: $text_1";
 echo'<br>output--->'.$output8;
 echo'<hr>';
 }
-
-
-
+public function strpos($text_1)
+{
+$output9 = strpos($text_1,"Web");
+echo"Find Web in sentence : $text_1 ";
+echo'<br>output--->'.$output9;
+echo'<hr>';
+}
 }
 ?>
